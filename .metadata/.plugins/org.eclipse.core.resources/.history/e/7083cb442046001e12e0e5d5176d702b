@@ -1,0 +1,86 @@
+package day10;
+
+public class ClassEx03 {
+
+	public static void main(String[] args) {
+
+		//파워,채널업다운,볼륨업다운
+		TV tv = new TV("LG");
+		tv.isPower();
+		tv.channelUp();
+		tv.channelDown();
+		
+		
+	
+	}
+
+}
+class TV{
+	/* 멤버변수 : name, power, chnnel, vol
+	 * 메서드 : 전원, 채널up / down, vol up/down
+	 * */
+	private String name;
+	private boolean power;
+	private int channel;
+	private int volume;
+
+	//생성자
+	public TV() {}
+	public TV(String name) {
+		this.name = name;
+	}
+	
+	//메서드
+	public void isPower() {
+	if(!power) {
+		power = true;
+		System.out.println("전원이켜짐");
+	}else {
+		power = false;
+		System.out.println("꺼짐");
+	}
+	}
+	//channel 상태
+	public void channelUp() {
+		channel++;
+		System.out.println("현재채널:"+channel);
+	}
+	public void channelDown() {
+		channel--;
+		System.out.println("현재채널:"+channel);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

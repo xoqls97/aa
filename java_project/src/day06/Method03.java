@@ -1,0 +1,90 @@
+package day06;
+
+import java.util.Scanner;
+
+public class Method03 {
+
+	public static void main(String[] args) {
+//		 메서드를 활용한 계산기 작성 
+		 
+//		 두 수와 연산자를 입력받아서 메서드를 활용하여 연산
+		 
+
+		Scanner scan = new Scanner(System.in);
+		 System.out.println("첫번째 수를 입력");
+		
+		int b = scan.nextInt();
+
+		System.out.println("두번재 수를 입력");
+		int c = scan.nextInt();
+		System.out.println("연산자를입력");
+		String a = scan.next();
+		
+		switch(a) {
+		case "+" :
+			sum("+",b,c);
+			break;
+		case "-" :
+			min("-",b,c);
+			break;
+		case "*" :
+			mul("*",b,c);
+			break;
+		case "/" :
+			div("/",b,c);
+			break;
+		case "%" :
+			//rem2를 호출하여 몫과 나머지를 출력
+           rem2("%",b,c);
+			break;
+			default : System.out.println("잘못된 연산자입니다.");
+			break;
+			
+		}
+		System.out.println("계산기종료~");
+		
+		
+		
+		
+		
+		
+		
+		
+		scan.close();
+		
+		
+		
+		
+		
+	}
+
+	public static void sum(String a ,int num1,int num2) {	
+		System.out.println(num1+a+num2+"="+(num1+num2));
+	      	
+	}
+	public static void min(String a,int num1,int num2) {	
+	    System.out.println(num1+a+num2+"="+(num1-num2));	
+	}
+	public static void mul(String a,int num1,int num2) {	
+	    System.out.println(num1+a+num2+"="+(num1*num2));	
+	}
+	public static void div(String a,double num1,double num2) {	
+	    System.out.println(num1+a+num2+"="+(num1/num2));	
+	}
+	public static void rem(String a,int num1,int num2) {	
+	    System.out.println(num1+a+num2+"="+(num1%num2));	
+	
+	}
+	public static void rem2(String a,double num1, double num2) {
+		double arr []= new double[2];
+		arr[0] = num1/num2;
+		arr[1] = num1%num2;
+        System.out.println(num1+a+num2+"의 몫은 "+arr[0]+" "+"나머지는 "+arr[1]);
+		
+	}
+	/* 기능 : 두 정수를 입력받아 두 정수의 몫과 나머지를 double[]로 리턴
+	 * 리턴타입:double[]
+	 * 매개변수: 두 정수
+	 * 변수명 : rem2
+	 * */
+}

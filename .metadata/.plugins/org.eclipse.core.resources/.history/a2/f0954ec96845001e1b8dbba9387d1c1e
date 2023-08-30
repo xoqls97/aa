@@ -1,0 +1,32 @@
+package day09;
+
+
+public class 과제 {
+
+	public static void main(String[] args) {
+     // 클래스 객체 생성 (2명)
+     // 값을 입력 후 정보출력
+		student student1 = new student();
+		student student2 = new student();
+		student1.print("이태빈", 50, 010-5151-5151);
+		
+	}
+}
+//클래스 생성
+// 학생 클래스 생성
+// 이름, 나이, 전화번호, 주소
+//출력
+//이름(나이) 전화번호
+class student{
+	private String name;
+	private int age;
+	private int phone;
+	
+	public void print(String name,int age,int phone) {
+		System.out.printf(name,age,phone);
+	}
+	
+
+	
+
+}

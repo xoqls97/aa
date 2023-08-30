@@ -1,0 +1,45 @@
+package day07;
+
+import java.util.Scanner;
+
+public class Method06 {
+
+	public static void main(String[] args) {
+             /* 구구단 출력
+              * 단 1개를 주고, 구구단 출력
+              * */
+		//2~9까지 반복하여 모든 단을 출력
+//	a();	
+	System.out.println();
+
+
+	Scanner scan =new Scanner(System.in);
+	System.out.println("단을 입력하세요");
+
+a();	
+	
+	
+	
+	
+	
+	scan.close();
+	
+	}
+	/*기능 : 단이 주어지면 그 단의 구구단을 출력(리턴x)
+	 * */
+
+	
+	public static  void a() {
+		Scanner sc = new Scanner(System.in);
+	     int s = sc.nextInt();
+		for(int i=s; i<=s; i++) {
+			for(int j=1; j<=9; j++) {
+				System.out.println(s+"x"+j+"="+s*j);
+				
+			}
+		}
+
+	sc.close();
+	
+	}
+}

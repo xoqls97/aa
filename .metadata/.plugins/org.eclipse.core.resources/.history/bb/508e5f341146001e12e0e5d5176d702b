@@ -1,0 +1,102 @@
+package day10;
+
+
+public class ClassEx02 {
+
+	public static void main(String[] args) {
+
+		/* 자동차 클래스 생성
+		 * 멤버변수 :
+		 * 메서드 : 전원,스피드up, 스피드down
+
+		 * 
+		 */
+		Car car = new Car();
+		car.setName("K7");
+		car.setBirth(2011);
+		car.setColor("black");
+		car.carprint();
+		
+		car.power();
+		car.power();
+		car.speed("up");
+		car.speed("up");
+		car.speed("up");
+		car.speed("up");
+		car.speed("up");
+		car.speed("down");
+		
+	}
+
+}
+class Car{
+	
+private	int speed;
+private	boolean power;
+private String name;
+private int birth;
+private String color;
+
+public void carprint() {
+	System.out.println("자동차명: "+name+" "+"연식: "+birth+" "+"색상: "+color);
+}
+
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public int getBirth() {
+	return birth;
+}
+public void setBirth(int birth) {
+	this.birth = birth;
+}
+public String getColor() {
+	return color;
+}
+public void setColor(String color) {
+	this.color = color;
+}
+public void power() {
+	if(!power) {
+		power =true;
+		System.out.println("시동이켜졋음");
+	}else {
+		power = false;
+		System.out.println("시동이꺼짐");
+	}
+}
+	public void speed (String str) {
+		if(str=="up") {
+			speed+=10;
+			System.out.println("속도: "+speed);
+		}else if(str=="down") {
+			speed-=10;
+			System.out.println("속도:"+speed);
+		}
+		
+	}
+
+
+public int getSpeed() {
+	return speed;
+}
+
+public void setSpeed(int speed) {
+	this.speed = speed;
+}
+
+public boolean isPower() {
+	return power;
+}
+
+public void setPower(boolean power) {
+	this.power = power;
+}
+
+
+
+	
+}

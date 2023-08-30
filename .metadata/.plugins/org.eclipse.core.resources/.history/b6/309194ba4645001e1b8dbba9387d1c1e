@@ -1,0 +1,14 @@
+package day09;
+
+import java.util.Scanner;
+
+public class BaseBallGame {
+
+	public static void main(String[] args) {
+
+		/* day08 과제 -> 메서드로 변경
+		 * */
+	}
+	
+	
+}

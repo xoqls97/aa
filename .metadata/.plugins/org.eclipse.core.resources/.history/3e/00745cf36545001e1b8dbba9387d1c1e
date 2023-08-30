@@ -1,0 +1,45 @@
+package day09;
+
+import java.util.Scanner;
+
+public class 과제 {
+
+	public static void main(String[] args) {
+     // 클래스 객체 생성 (2명)
+     // 값을 입력 후 정보출력
+		Scanner scan = new Scanner(System.in);
+
+		student s = new student();
+		student s2 = new student();
+		System.out.println("학생1의 이름을 입력하세요");
+		String name = scan.next();
+		System.out.println("학생1의 나이를 입력하세요");
+		int age = scan.nextInt();
+		System.out.println("학생1의 번호를 입력하세요");
+		int phone = scan.nextInt();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		scan.close();
+	}
+
+}
+//클래스 생성
+// 학생 클래스 생성
+// 이름, 나이, 전화번호, 주소
+//출력
+//이름(나이) 전화번호
+class student{
+	String name;
+	int age;
+	int phone;
+	public int s(String name, int age, int phone) {
+      return 3;
+	}
+}

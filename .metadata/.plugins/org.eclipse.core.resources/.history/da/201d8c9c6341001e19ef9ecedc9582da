@@ -1,0 +1,38 @@
+package day06;
+
+import java.util.Scanner;
+
+public class 주사위게임 {
+
+	public static void main(String[] args) {
+		/* 주사위를 던져서 총30칸을 이동하면 완주
+		 * 주사위:1~6까지 랜덤수
+		 * ex) 주사위:3 => 3칸이동=>27칸남았습니다.
+		 *     주사위:6 => 6칸이동=>??칸 남았습니다.
+		 *     ..
+		 *     도착~!! 총 이동 횟수 : 8번 완주
+		 *     
+		 * */
+//		Scanner scan = new Scanner(System.in);
+//		System.out.println("주사위를 굴리시려면 1을 입력하세요");
+//		int cnt = 0;
+//		int diceroll = 0;
+//		int numt = scan.nextInt();
+//		       if
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+//		scan.close();
+
+	}
+
+}

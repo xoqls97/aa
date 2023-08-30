@@ -1,0 +1,25 @@
+package day07;
+
+import java.util.Scanner;
+
+public class Method05 {
+
+	public static void main(String[] args) {
+		/* 2~100까지의 소수를 출력
+		 * 2~100까지 for문을 돌려서 메서드 호출하여 true라면 출력 
+		 * */
+
+		int a= 10;
+		for(int i=1; i<=a; i++) {
+			if(a%10 ==0) {
+				System.out.println(a);
+			}
+		}
+	}
+	//기능: 정수가 주어지면 이 정수가 소수인지 아닌지 판단(true/false)
+	public static void a() {
+
+		
+
+}
+}

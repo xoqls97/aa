@@ -1,0 +1,67 @@
+package day07;
+
+
+public class Method05 {
+
+	public static void main(String[] args) {
+		/* 2~100까지의 소수를 출력
+		 * 2~100까지 for문을 돌려서 메서드 호출하여 true라면 출력 
+
+		 * */
+		for(int i=2; i<=100; i++) {
+			if(isPrime(i)) {
+				System.out.print(i+" ");
+			}
+		}
+	
+		//2~100까지 소수의 합계
+	System.out.println();
+		int sum=0;
+		for(int i=2; i<=100; i++) {
+			if(isPrime(i)) {
+              sum+=i;
+			}
+		}
+		System.out.println("소수의 합:"+sum);
+	}
+	//기능: 정수가 주어지면 이 정수가 소수인지 아닌지 판단(true/false)
+
+	/* 리턴타입 : boolean
+	 * 매개변수 : 정수 => int num
+	 * 메서드명: isPrime // 맞냐 아니냐는 앞에 is를붙힘
+	 * */
+	public static boolean isPrime(int num) {
+		int cnt = 0;
+		for(int i=1; i<=num; i++) { //1부터 num까지 반복하여 약수의 개수를 확인
+			if(num % i == 0) { //약수찾기
+				cnt++; //약수 개수확인
+				
+			}
+			
+		}
+		if(cnt == 2) {
+			return true;
+		}
+		return false;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+		
+	
+
+ 
+	
+		
+

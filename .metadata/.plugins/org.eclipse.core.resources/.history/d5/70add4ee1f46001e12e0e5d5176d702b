@@ -1,0 +1,109 @@
+package day10;
+
+public class ClassEx03 {
+
+	public static void main(String[] args) {
+
+		//파워,채널업다운,볼륨업다운
+		TV t = new TV("삼성티비","2022년형","korea");
+		t.powerOn ();                               
+	t.volumeUp();
+	t.volumeUp();
+	t.volumeUp();
+	t.volumeUp();
+	t.volumeUp();
+	t.volumeUp();
+	t.volumeDown();
+	
+	
+	}
+
+}
+class TV{
+	private String name;
+	private String year;
+	private String madein;
+	private boolean power;
+	private int ch;
+	private int vol;
+	
+	//생성자
+	public TV() {}
+	public TV(String name ,String year, String madein ) {
+		this.name=name;
+		this.year=year;
+		this.madein=madein;
+	}
+	//메서드 : 전원on, 전원off,볼륨up,볼륨down
+	public void powerOn() {
+		power = true;
+		System.out.println("전원이켜짐");
+		
+	}
+	public void powerOff() {
+		power = false;
+		System.out.println("전원이꺼짐");
+	}
+	public void volumeUp() {
+		vol++;
+		System.out.println("vol:"+vol);
+	}
+	public void volumeDown() {
+		vol--;
+		if(vol ==0) {
+			System.out.println("볼륨이 0입니다.");
+		}
+		System.out.println("vol:"+vol);
+	}
+	public void chUp() {
+		ch++;
+		System.out.println("ch:"+ch);
+	}
+	public void chDown() {
+		ch--;
+		System.out.println("ch:"+ch);
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getYear() {
+		return year;
+	}
+	public void setYear(String year) {
+		this.year = year;
+	}
+	public String getMadein() {
+		return madein;
+	}
+	public void setMadein(String madein) {
+
+		this.madein = madein;
+	}
+	public boolean isPower() {
+		return power;
+	}
+	public void setPower(boolean power) {
+		this.power = power;
+	}
+	public int getCh() {
+		return ch;
+	}
+	public void setCh(int ch) {
+		this.ch = ch;
+	}
+	public int getVol() {
+		return vol;
+	}
+	public void setVol(int vol) {
+		this.vol = vol;
+	}
+	
+	
+	
+	
+	
+	
+}
